@@ -1,0 +1,261 @@
+<!DOCTYPE html>
+<html lang="cs">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Arthur Morgan | Outlaw Legacy</title>
+ 
+  <!-- SEO & Open Graph -->
+  <meta name="description" content="Atmosférická interaktivní prezentace Arthura Morgana z Red Dead Redemption 2.">
+  <meta name="keywords" content="Arthur Morgan, Red Dead Redemption 2, RDR2, Western, Outlaw, Rockstar Games">
+  <meta property="og:title" content="Arthur Morgan | Outlaw Legacy">
+  <meta property="og:description" content="Cinematický web inspirovaný koncem éry psanců.">
+  <meta property="og:image" content="https://images7.alphacoders.com/136/thumb-1920-1363449.png">
+  <meta property="og:type" content="website">
+ 
+  <!-- Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@400;600;700&family=Inter:wght@300;400;500;600&display=swap%22 rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+  <!-- Structured Data -->
+  <script type="application/ld+json">
+  {
+    "@context":"https://schema.org",
+    "@type":"WebSite",
+    "name":"Arthur Morgan Legacy",
+    "url": window.location.href
+  }
+  </script>
+
+</head>
+<body>
+  <a href="#main-content" class="skip-link">Přeskočit na obsah</a>
+ 
+  <!-- NAVIGACE -->
+  <header class="main-header">
+    <nav class="navbar" aria-label="Hlavní navigace">
+      <div class="logo">OUTLAW LEGACY</div>
+      <ul class="nav-links">
+        <li><a href="#about">Příběh</a></li>
+        <li><a href="#timeline">Kronika pádu</a></li>
+        <li><a href="#morality">Svědomí</a></li>
+        <li><a href="#skills">Instinkty</a></li>
+        <li><a href="#gang">Rodina</a></li>
+        <li><a href="#gallery">Momenty</a></li>
+      </ul>
+    </nav>
+  </header>
+ 
+  <!-- HERO INTRO -->
+  <section class="hero">
+    <div class="hero-bg"></div>
+    <div class="overlay"></div>
+    <div class="lightning" id="lightning"></div>
+    <canvas id="rain" aria-hidden="true"></canvas>
+ 
+    <div class="hero-content">
+      <p class="subtitle">1899 • The End of an Era</p>
+      <h1>Arthur Morgan</h1>
+      <p class="hero-description">Legendární pistolník zmítaný mezi loajalitou, vlastním svědomím a brutálním světem končícího Divokého západu.</p>
+      <a href="#about" class="hero-btn">Vstoupit do prachu</a>
+    </div>
+  </section>
+ 
+  <!-- HLAVNÍ OBSAH -->
+  <main id="main-content" aria-label="Obsah webu">
+   
+    <!-- O ARTHUROVI -->
+    <section class="section reveal" id="about">
+      <div class="section-title">
+        <span>01</span>
+        <h2>Poslední svého druhu</h2>
+      </div>
+<div class="about-grid">
+  
+  <div class="about-text">
+    <p>Civilizace pohlcuje divočinu a neúprosný zákon nahrazuje svobodu olova. Arthur Morgan, jakožto klíčový člen gangen Van der Linde, prožívá svět, kde věrnost znamenala víc než samotný život.</p>
+    <p>Přestože žije život zločince na útěku, postupně si pod tíhou událostí začíná uvědomovat skutečnou hodnotu lidskosti a váhu vlastních rozhodnutí. Hranice mezi hrdinou a vrahem se rozplývá v prachu cest</p>
+    <p>Každý čin vryl hlubokou rýhu do tváře staré Ameriky. Zbývá už jen jediné – najít vykoupení, pokud na něj ještě vůbec věříš.</p>
+  </div>
+
+  <!-- HONOR OBRÁZKY POD TEXTEM -->
+  <div class="honor-images">
+    
+    <div class="honor-image" id="lowHonorImage">
+      <img src="https://c4.wallpaperflare.com/wallpaper/869/353/161/red-dead-redemption-2-video-games-arthur-morgan-sunset-dusk-hd-wallpaper-preview.jpg" alt="Arthur Morgan Low Honor">
+    </div>
+
+    <div class="honor-image visible" id="mediumHonorImage">
+      <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQiEheZQ4x7HbEFBUsMLYwK08f2TLGR0xgkHg&s" alt="Arthur Morgan Medium Honor">
+    </div>
+
+    <div class="honor-image" id="highHonorImage">
+      <img src="https://th.wallhaven.cc/small/3l/3lxk79.jpg" alt="Arthur Morgan High Honor">
+    </div>
+
+  </div>
+
+</div>
+
+    </section>
+ 
+    <!-- KRONIKA PÁDU -->
+    <section class="section dark-section reveal" id="timeline">
+      <div class="section-title">
+        <span>02</span>
+        <h2>Cesta do zapomnění</h2>
+      </div>
+      <div class="timeline">
+        <div class="timeline-item">
+          <div class="timeline-year">Bouře v horách</div>
+          <div class="timeline-content">Útěk před zákonem do mrazivého sevření skalnatých štítů. Začátek konce jedné éry.</div>
+        </div>
+        <div class="timeline-item">
+          <div class="timeline-year">Prach a klam</div>
+          <div class="timeline-content">Sliby o svobodě a lepším životě se začínají drolit pod neúprosnou vahou reality.</div>
+        </div>
+        <div class="timeline-item">
+          <div class="timeline-year">Zrcadlo pokroku</div>
+          <div class="timeline-content">Nevítaný střet s ocelí, kouřem a betonem moderních měst, která neznají slitování.</div>
+        </div>
+        <div class="timeline-item">
+          <div class="timeline-year">Poslední jízda</div>
+          <div class="timeline-content">Když už nezbývá nic než čest, o kterou tě žádný zákon na světě nemůže připravit.</div>
+        </div>
+      </div>
+    </section>
+ 
+    <!-- MORÁLNÍ KODEX (HONOR SYSTEM) -->
+    <section class="section reveal" id="morality">
+      <div class="section-title">
+        <span>03</span>
+        <h2>Váha svědomí</h2>
+      </div>
+      <div class="honor-wrapper">
+        <div class="honor-labels">
+          <span>Temnota</span>
+          <span>Světlo</span>
+        </div>
+        <input type="range" min="0" max="100" value="50" id="honorSlider" aria-label="Posuvník cti a svědomí">
+        <div class="honor-output" id="honorText">Bojuješ s tím, kým jsi a kým bys mohl být.</div>
+      </div>
+    </section>
+ 
+    <!-- INSTINKTY / DOVEDNOSTI -->
+    <section class="section dark-section reveal" id="skills">
+      <div class="section-title">
+        <span>04</span>
+        <h2>Instinkty přežití</h2>
+      </div>
+      <div class="cards-grid">
+        <article class="card">
+          <h3>Přežití a lov</h3>
+          <p>Expertíza v divočině, čtení stop v blátě a nekonečná trpělivost, která dělí kořist od dravce.</p>
+        </article>
+        <article class="card">
+          <h3>Taktický boj (Olovo)</h3>
+          <p>Chladná ruka, rychlé rozhodování pod tlakem a oko, které vidí cíl dřív, než prst stiskne spoušť.</p>
+        </article>
+        <article class="card">
+          <h3>Pouto s koněm</h3>
+          <p>Jediné čisté spojení se světem skrze věrného hřbeta v nekonečných prériích Ameriky.</p>
+        </article>
+        <article class="card">
+          <h3>Rozvaha a vedení</h3>
+          <p>Schopnost číst v lidech v dobách chaosu, instinktivně vědět kdy mluvit a kdy tasit kolt.</p>
+        </article>
+        <article class="card">
+          <h3>Stín a plížení</h3>
+          <p>Tichý pohyb divočinou i nepřátelskými kempy tam, kam se oko zákona neodváží pohlédnout.</p>
+        </article>
+        <article class="card">
+          <h3>Lojalita gangu</h3>
+          <p>Pevný morální řád postavený na ochraně slabších členů své rodiny do posledního dechu.</p>
+        </article>
+      </div>
+    </section>
+ 
+    <!-- ZTRACENÁ RODINA -->
+    <section class="section reveal" id="gang">
+      <div class="section-title">
+        <span>05</span>
+        <h2>Ztracená rodina</h2>
+      </div>
+      <div class="gang-grid">
+        <article class="gang-card">
+  <img src="https://media-rockstargames-com.akamaized.net/mfe6/prod/__common/img/63adf0c4865f12ca56f6e0029a520bf7.jpg?im=Resize,width=768,height=432" alt="Dutch van der Linde" loading="lazy">
+
+  <img class="last-seen"
+  src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSKJSV0pBqChAAEnL6xGp4W8m6qEFYhZY5XUg&s"
+  alt="Dutch last seen">
+
+  <h3>Vizionář (Dutch)</h3>
+</article>
+        <article class="gang-card">
+  <img src="https://www.rdr2.fr/images/screenshots-officiels/medium/199.jpg" alt="John Marston" loading="lazy">
+
+  <img class="last-seen"
+  src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSNvJ4pGBKmidsAjyjyA5qTFZdJvbqYDCIrNA&s"
+  alt="John last seen">
+
+  <h3>Učeň (John)</h3>
+</article>
+        <article class="gang-card">
+  <img src="https://www.rdr2.fr/images/screenshots-officiels/medium/65.jpg" alt="Micah Bell" loading="lazy">
+
+  <img class="last-seen"
+  src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSPCVpOE7bata6gsbZ81Vsv7LOUM4GT53FikA&s"
+  alt="Micah last seen">
+
+  <h3>Zrada (Micah)</h3>
+</article>
+        <article class="gang-card">
+  <img src="https://media-rockstargames-com.akamaized.net/mfe6/prod/__common/img/d53335ae750d19c6d67093e8a342f05d.jpg?im=Resize,width=768,height=432" alt="Sadie Adler" loading="lazy">
+
+  <img class="last-seen"
+  src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQNXesIpaBwxkC4cHXWxZIW-DNI67Dw6ekJIQ&s"
+  alt="Sadie last seen">
+
+  <h3>Pomsta (Sadie)</h3>
+</article>
+      </div>
+    </section>
+ 
+    <!-- DIALOGOVÁ SEKCE -->
+    <section class="quote-section reveal">
+      <blockquote id="quoteText">"We're thieves in a world that don't want us no more."</blockquote>
+    </section>
+ 
+    <!-- MOMENTY (GALERIE) -->
+    <section class="section dark-section reveal" id="gallery">
+      <div class="section-title">
+        <span>06</span>
+        <h2>Momenty v čase</h2>
+      </div>
+<div class="moment-slider">
+  <div class="moment-track">
+    <img id="moment1" class="moment-img">
+    <img id="moment2" class="moment-img">
+  </div>
+</div>
+    </section>
+  </main>
+ 
+  <!-- PATIČKA -->
+  <footer class="footer">
+    <p>Inspired by the dust of the old west & Rockstar Games.</p>
+    <p>HTML5 • CSS3 • Vanilla JS • Student Fan Project</p>
+  </footer>
+ 
+  <!-- MODAL SVĚTELNÝ BOX -->
+  <div class="modal" id="modal" role="dialog" aria-hidden="true">
+    <button class="modal-close" id="modalClose" aria-label="Zavřít galerii">×</button>
+    <img src="" alt="" id="modalImage">
+  </div>
+ 
+  <!-- CANVAS PRO EFEKTY -->
+  <canvas id="glass" aria-hidden="true"></canvas>
+  <script src="scripts.js"></script>
+</body>
+</html>
