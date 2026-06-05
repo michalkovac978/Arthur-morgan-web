@@ -249,26 +249,29 @@ git clone https://github.com/michalkovac978/Arthur-morgan-web.git
 * desktop verze
   ![Snímek obrazovky 2026-06-05 184520](https://github.com/user-attachments/assets/36f5a403-aaee-4f91-9630-e049466537e7)
 
-  
+---------------------------------------------------------------------------------------------------------- 
 * mobilní verze
 ![Mobilní verze webu](https://github.com/user-attachments/assets/f318f9eb-00e5-4506-b879-acb3dfce5047)
-=>
+
 ![Honor System na mobilním zařízení](https://github.com/user-attachments/assets/a6e4d6a3-114d-4c4a-828e-570315589254)
-=>
+
 ![Mobilní verze – galerie a interaktivní prvky](https://github.com/user-attachments/assets/ff1f8731-fdde-465f-9940-c64a2918f7e6)
 
+---------------------------------------------------------------------------------------------------------- 
 * hero sekce
   ![Snímek obrazovky](https://github.com/user-attachments/assets/ff3d8f41-a8b4-4a83-945d-fde5a43487fa)
-  
+
+---------------------------------------------------------------------------------------------------------- 
 * honor system
 ![Snímek obrazovky 2026-06-05 184054](https://github.com/user-attachments/assets/dca13ada-9dae-4791-8c41-f474151f15d2)
-=
+
 ![Snímek obrazovky 2026-06-05 184304](https://github.com/user-attachments/assets/5800f929-0b90-46bf-a299-e7073b80bfd3)
 
+---------------------------------------------------------------------------------------------------------- 
 * gang
   ![Screenshot](https://github.com/user-attachments/assets/9f49d724-1e25-478a-997b-c94347d8830c)
 
----
+---------------------------------------------------------------------------------------------------------- 
 
 ## Autor
 
