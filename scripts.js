@@ -273,22 +273,33 @@ function resizeGlass() {
       }
     }
      
-window.addEventListener("pointerdown", e => {
-  document.addEventListener("dblclick", e => {
-  e.preventDefault();
+let startX = 0;
+let startY = 0;
+let isDown = false;
+
+window.addEventListener("pointerdown", (e) => {
+  isDown = true;
+  startX = e.clientX;
+  startY = e.clientY;
 });
-  const selection = window.getSelection();
 
-  // 🔴 pokud uživatel něco označuje → ignoruj střelbu
-  if (selection && selection.toString().length > 0) return;
+window.addEventListener("pointerup", (e) => {
+  if (!isDown) return;
+  isDown = false;
 
-  const blocked = e.target.closest("a, button, .gallery-item, input, textarea");
-  if (blocked) return;
-  
-  const x = e.clientX;
-  const y = e.clientY;
+  const dx = Math.abs(e.clientX - startX);
+  const dy = Math.abs(e.clientY - startY);
 
-  shots.push(new SpiderWebShot(x, y));
+  if (dx < 10 && dy < 10) {
+
+    const selection = window.getSelection();
+    if (selection && selection.toString().length > 0) return;
+
+    const blocked = e.target.closest("a, button, .gallery-item, input, textarea");
+    if (blocked) return;
+
+    shots.push(new SpiderWebShot(e.clientX, e.clientY));
+  }
 });
 
 const ammoUI = document.getElementById("ammoUI");
