@@ -5,7 +5,7 @@ const reduceMotion = window.matchMedia("(prefers-reduced-motion: reduce)").match
        ========================================================================== */
     const rain = document.getElementById("rain");
     const rctx = rain.getContext("2d");
-    let rainActive = true;
+    let rainActive = false;
     let rainRAF;
     let w, h, drops = [];
      
@@ -28,7 +28,7 @@ const reduceMotion = window.matchMedia("(prefers-reduced-motion: reduce)").match
     window.addEventListener("resize", resizeRain);
      
 function drawRain() {
-  if (reduceMotion) return;
+  if (!rainActive || reduceMotion) return;
 
   rctx.clearRect(0, 0, w, h);
 
@@ -55,15 +55,6 @@ function startRain() {
   rainActive = true;
   drawRain();
 }
-
-function drawRain() {
-  if (reduceMotion) return;
-  if (!rainActive) return;
-
-  rctx.clearRect(0, 0, w, h);
-
-}
-    if (!reduceMotion) drawRain();
 
 let heroVisible = true;
 
@@ -434,6 +425,11 @@ const lightningObserver = new IntersectionObserver((entries) => {
 });
 
 lightningObserver.observe(hero);
+
+function stopRain() {
+  rainActive = false;
+  cancelAnimationFrame(rainRAF);
+}
 
 const rainObserver = new IntersectionObserver((entries) => {
   entries.forEach(entry => {
