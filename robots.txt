@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://michalkovac978.github.io/Arthur-morgan-web/sitemap.xml
