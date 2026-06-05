@@ -1,4 +1,6 @@
-/* ==========================================================================
+const reduceMotion = window.matchMedia("(prefers-reduced-motion: reduce)").matches;
+      
+      /* ==========================================================================
        RAIN EFFECT (DÉŠŤ)
        ========================================================================== */
     const rain = document.getElementById("rain");
@@ -26,7 +28,7 @@
     window.addEventListener("resize", resizeRain);
      
 function drawRain() {
-  if (!rainActive) return;
+  if (reduceMotion) return;
 
   rctx.clearRect(0, 0, w, h);
 
@@ -54,28 +56,34 @@ function startRain() {
   drawRain();
 }
 
-function stopRain() {
-  rainActive = false;
-  cancelAnimationFrame(rainRAF);
+function drawRain() {
+  if (reduceMotion) return;
+  if (!rainActive) return;
+
+  rctx.clearRect(0, 0, w, h);
+
 }
-    drawRain();
+    if (!reduceMotion) drawRain();
 
 let heroVisible = true;
 
 /* LIGHTNING (BLESKY) */
-setInterval(() => {
-  const lightning = document.getElementById("lightning");
+if (!reduceMotion) {
 
-  // ❌ pokud HERO není vidět → nic nedělej
-  if (!heroVisible) return;
+  setInterval(() => {
+    const lightning = document.getElementById("lightning");
 
-  lightning.classList.add("flash");
+    if (!heroVisible) return;
 
-  setTimeout(() => {
-    lightning.classList.remove("flash");
-  }, 400);
+    lightning.classList.add("flash");
 
-}, 15000);
+    setTimeout(() => {
+      lightning.classList.remove("flash");
+    }, 400);
+
+  }, 15000);
+
+}
      
     /* ==========================================================================
        SCROLL REVEAL ANIMACE
@@ -167,9 +175,15 @@ const highHonorImage = document.getElementById("highHonorImage");
     const quoteSection = document.querySelector(".quote-section");
     const quoteObserver = new IntersectionObserver(entries => {
       if(entries[0].isIntersecting) {
-        setTimeout(typeQuote, 300);
-        quoteObserver.disconnect();
-      }
+
+  if (!reduceMotion) {
+    setTimeout(typeQuote, 300);
+  } else {
+    quoteEl.textContent = textQuote;
+  }
+
+  quoteObserver.disconnect();
+}
     }, { threshold: 0.2 });
     quoteObserver.observe(quoteSection);
      
@@ -285,9 +299,11 @@ const ammoUI = document.getElementById("ammoUI");
       shots = shots.filter(shot => shot.draw());
       requestAnimationFrame(animateWebs);
     }
+  if (!reduceMotion) {
     animateWebs();
+  }
 
-    const moments = [
+  const moments = [
 //1
   "https://images4.alphacoders.com/130/thumb-440-1304753.webp",
 //2
